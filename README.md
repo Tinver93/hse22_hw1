@@ -59,3 +59,95 @@
 
 multiqc:
 1. ![Перед тримом](Аналитика1_1.png "Перед тримом")
+2. ![Перед тримом](Аналитика1_2.png "Перед тримом")
+3. ![Перед тримом](Аналитика1_3.png "Перед тримом")
+
+multiqc:
+1. ![После трима](Аналитика2_1.png "После трима")
+2. ![После трима](Аналитика2_2.png "После трима")
+3. ![После трима](Аналитика2_3.png "После трима")
+
+Код из коллаба:
+1. with open ('out_contig.fa') as f:
+  x = f.read()
+arr = x.split('>')
+len_arr = [len(x) for x in arr]
+max_element = arr[len_arr.index(max(len_arr))]
+len_arr = sorted(len_arr)
+sum = 0
+for item in len_arr:
+  n50 = item
+  sum += item
+  if sum > (len(x)/2):
+    break
+print('Количество контигов', len(arr))
+print('Суммарная длинна всех объектов', len(x))
+print('Максимальная длинна объекта', max(len_arr))
+print('n50 = ', n50)
+
+Вывод:
+
+Количество контигов 617
+Суммарная длинна всех объектов 3988844
+Максимальная длинна объекта 181572
+n50 =  52256
+
+2.with open ('out_gapClosed.fa') as f:
+  x = f.read()
+arr = x.split('>')
+len_arr = [len(x) for x in arr]
+max_element = arr[len_arr.index(max(len_arr))]
+len_arr = sorted(len_arr)
+sum = 0
+for item in len_arr:
+  n50 = item
+  sum += item
+  if sum > (len(x)/2):
+    break
+cnt = 0
+for i in range(len(max_element)):
+  if (max_element[i-1] == "N") and (max_element[i] != "N"):
+    cnt += 1
+print('Количество гэпов в самом длинном элементе', cnt)
+print('Количество скаффолдов с закрытыми гэпами', len(arr))
+print('Суммарная длинна всех объектов', len(x))
+print('Максимальная длинна объекта', max(len_arr))
+print('n50 = ', n50)
+
+Вывод:
+
+Количество гэпов в самом длинном элементе 36
+Количество скаффолдов с закрытыми гэпами 76
+Суммарная длинна всех объектов 3973489
+Максимальная длинна объекта 3927325
+n50 =  3927325
+
+3. with open ('out_scaffold.fa') as f:
+  x = f.read()
+arr = x.split('>')
+len_arr = [len(x) for x in arr]
+max_element = arr[len_arr.index(max(len_arr))]
+len_arr = sorted(len_arr)
+sum = 0
+for item in len_arr:
+  n50 = item
+  sum += item
+  if sum > (len(x)/2):
+    break
+cnt = 0
+for i in range(len(max_element)):
+  if (max_element[i-1] == "N") and (max_element[i] != "N"):
+    cnt += 1
+print('Количество гэпов в самом длинном элементе', cnt)
+print('Количество скаффолдов',len(arr))
+print('Суммарная длинна всех объектов', len(x))
+print('Максимальная длинна объекта', max(len_arr))
+print('n50 = ', n50)
+
+Вывод:
+
+Количество гэпов в самом длинном элементе 149
+Количество скаффолдов 76
+Суммарная длинна всех объектов 3927603
+Максимальная длинна объекта 3880778
+n50 =  3880778
