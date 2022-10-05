@@ -58,4 +58,4 @@
    56.  Exit
 
 multiqc:
-![Перед тримом]((https://github.com/Tinver93/hse22_hw1/blob/main/Аналитика1_1.png)
+1. ![Перед тримом](Аналитика1_1.png "Перед тримом")
