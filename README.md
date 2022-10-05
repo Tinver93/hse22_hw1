@@ -1,18 +1,33 @@
 Список команд на сервере:
+
     1  ln -s /usr/share/data-minor-bioinf/assembly/* .
+    
     2  ls
+    
     3  seqtk sample -s 111 oi1MP_S4_L001_R1_001.fastq 1500000
+    
     4  seqtk sample -s 111 oilMP_S4_L001_R1_001.fastq 1500000
+    
     5  seqtk sample -s 111 oilMP_S4_L001_R1_001.fastq 1500000 > L001_R1_001.fastq
+    
     6  seqtk sample -s 111 oilMP_S4_L001_R2_001.fastq 1500000 > L001_R2_001.fastq
+    
     7  ls
+    
     8  seqtk sample -s 111 oil_R1.fastq 5000000 > oil_R1.fastq
+    
     9  seqtk sample -s 111 oil_R1.fastq 5000000 > L001_oil_R1.fastq
+    
    10  seqtk sample -s 111 oil_R2.fastq 5000000 > L001_oil_R2.fastq
+   
    11  mkdir Otcheti_o_kachestve
+   
    12  mv L001* Otcheti_o_kachestve
+   
    13  cd Otcheti_o_kachestve
+   
    14  fastqc *
+   
    15  multiqc .
    16  ls
    17  mv L001_oil_R2.fastq L001_R1_001.fastq L001_R2_001.fastq ../
