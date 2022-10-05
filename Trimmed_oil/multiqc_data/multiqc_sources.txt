@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	L001_oil_R2	/home/amsheynkin/Otcheti_o_podrez/Trimmed_oil/L001_oil_R2.fastq.trimmed_fastqc.zip
+FastQC	all_sections	L001_R1_001	/home/amsheynkin/Otcheti_o_podrez/Trimmed_oil/L001_R1_001.fastq.int_trimmed_fastqc.zip
+FastQC	all_sections	L001_R2_001	/home/amsheynkin/Otcheti_o_podrez/Trimmed_oil/L001_R2_001.fastq.int_trimmed_fastqc.zip
+FastQC	all_sections	L001_oil_R1	/home/amsheynkin/Otcheti_o_podrez/Trimmed_oil/L001_oil_R1.fastq.trimmed_fastqc.zip

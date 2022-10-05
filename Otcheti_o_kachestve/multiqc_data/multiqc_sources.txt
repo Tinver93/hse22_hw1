@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	L001_R1_001	/home/amsheynkin/Otcheti_o_kachestve/L001_R1_001_fastqc.zip
+FastQC	all_sections	L001_R2_001	/home/amsheynkin/Otcheti_o_kachestve/L001_R2_001_fastqc.zip
+FastQC	all_sections	L001_oil_R1	/home/amsheynkin/Otcheti_o_kachestve/L001_oil_R1_fastqc.zip
+FastQC	all_sections	L001_oil_R2	/home/amsheynkin/Otcheti_o_kachestve/L001_oil_R2_fastqc.zip
