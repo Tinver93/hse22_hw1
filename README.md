@@ -55,4 +55,5 @@
    54  mkdir Final
    55  mv out_contig.fa out_gapClosed.fa out_scaffold.fa Final
    56  Exit
-multiqc для
+multiqc:
+![](hse22_hw1/Аналитика1_1.png "Аналитика")
